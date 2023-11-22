@@ -29,6 +29,7 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-task wrapper(type: Wrapper) {
+
+wrapper {
 	gradleVersion = '8.4'
 }
