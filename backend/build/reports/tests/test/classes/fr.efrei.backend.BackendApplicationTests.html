@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.236s</div>
+<div class="counter">1.021s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">1.236s</td>
+<td class="success">1.021s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:26:58.958 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [fr.efrei.backend.BackendApplicationTests]: BackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:26:59.142 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration fr.efrei.backend.BackendApplication for test class fr.efrei.backend.BackendApplicationTests
+<pre>09:32:19.274 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [fr.efrei.backend.BackendApplicationTests]: BackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:32:19.477 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration fr.efrei.backend.BackendApplication for test class fr.efrei.backend.BackendApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -98,11 +98,21 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::       (v3.2.0-SNAPSHOT)
 
-2023-11-15T11:26:59.918+01:00  INFO 11120 --- [    Test worker] f.efrei.backend.BackendApplicationTests  : Starting BackendApplicationTests using Java 17.0.9 with PID 11120 (started by Noob in C:\Users\Noob\Downloads\backend)
-2023-11-15T11:26:59.920+01:00  INFO 11120 --- [    Test worker] f.efrei.backend.BackendApplicationTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-11-15T11:27:01.358+01:00  WARN 11120 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
-2023-11-15T11:27:01.413+01:00  INFO 11120 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-11-15T11:27:02.526+01:00  INFO 11120 --- [    Test worker] f.efrei.backend.BackendApplicationTests  : Started BackendApplicationTests in 3.009 seconds (process running for 5.048)
+2023-11-22T09:32:20.206+01:00  INFO 2528 --- [    Test worker] f.efrei.backend.BackendApplicationTests  : Starting BackendApplicationTests using Java 17.0.9 with PID 2528 (started by Noob in C:\Users\Noob\IdeaProjects\cloud_integration\backend)
+2023-11-22T09:32:20.208+01:00  INFO 2528 --- [    Test worker] f.efrei.backend.BackendApplicationTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-11-22T09:32:21.358+01:00  INFO 2528 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22T09:32:21.400+01:00  INFO 2528 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2023-11-22T09:32:22.043+01:00  INFO 2528 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-22T09:32:22.387+01:00  INFO 2528 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:58ccab4a-8117-4252-a993-ffac8baef25e user=SA
+2023-11-22T09:32:22.390+01:00  INFO 2528 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-22T09:32:22.478+01:00  INFO 2528 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22T09:32:22.598+01:00  INFO 2528 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-11-22T09:32:22.675+01:00  INFO 2528 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-11-22T09:32:23.120+01:00  INFO 2528 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-22T09:32:23.685+01:00  INFO 2528 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-22T09:32:23.690+01:00  INFO 2528 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22T09:32:23.941+01:00  WARN 2528 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22T09:32:24.595+01:00  INFO 2528 --- [    Test worker] f.efrei.backend.BackendApplicationTests  : Started BackendApplicationTests in 4.744 seconds (process running for 6.677)
 </pre>
 </span>
 </div>
@@ -114,7 +124,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at 15 nov. 2023, 11:27:03</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at 22 nov. 2023, 09:32:25</p>
 </div>
 </div>
 </body>
