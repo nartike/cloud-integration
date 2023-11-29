@@ -15,15 +15,12 @@ import java.util.List;
 @RequestMapping("/api")
 public class ItemResource {
 
-        //public final ItemService itemService;
+        public final ItemService itemService;
 
-        //public ItemResource(ItemService itemService) { this.itemService = itemService; }
+        public ItemResource(ItemService itemService) { this.itemService = itemService; }
         @GetMapping("/items")
-        //public List<Item> getAllItem() {
-        //    return itemService.findAll();
-        //}
         public List<Item> getAllItem() {
-                return new ArrayList<>();
+            return itemService.findAll();
         }
 
         @GetMapping("/items/{id}")
